@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>El Mandado</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<main>
+  <ul class="side-nav" id="nav-mobile">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="proveedores.html">Proveedores</a></li>
+      </ul>
+  <div class="navbar-fixed">
+	<nav class="teal lighten-1">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="index.html" class="brand-logo center"><img class="responsive-img logo" src="img/el_mandado.png"></a>
+      <a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="proveedores.html">Proveedores</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <!--Fin de la barra-->
+
+  <!--Parallax-->
+   <div class="parallax-container valign-wrapper">
+   <h2 class="white-text z-depth-5 slogan letra">¡Que no te falte!</h2>
+      <div class="parallax"><img src="img/mercado.jpg"></div>
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col s12 md12">
+    		<h3 class="center">¿Quienes somos?</h3>
+    		<p>LSomos una Empresa de servicios que ofrece el abastecimiento de alimentos  (abarrotes, frutas, verduras y carnes), artículos de limpieza y artículos de uso personal. También nos hacemos cargo del pago de servicios como electricidad, agua, gas, teléfono y predial.</p>
+        </div>
+    	</div>
+
+      <div class="row">
+        <div class="col m6 s12">
+          <h5 class="center">Misión</h5>
+          <p>Somos una empresa orgullosamente mexicana comprometida con el medioambiente  que brinda el mejor servicio de entregas a domicilio. Somos parte de la vida de nuestros clientes para que puedan contar con menos preocupaciones y más tiempo de calidad con su familia.</p>
+        </div>
+        <div class="col m6 s12">
+          <h5 class="center">Visión</h5>
+          <p>Ser una empresa reconocida a nivel nacional, dar un servicio personalizado con el que nuestros clientes puedan disfrutar sus actividades sin preocupaciones. Formar parte de la vida diaria de nuestros clientes siempre brindado la mejor calidad.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m12 s122">
+          <h5 class="center">¿Cómo funciona?</h5>
+          <p>Los clientes ordenan los artículos que quieren a través de nuestra aplicación para teléfonos inteligentes, además se les hace el cobro al momento. Lo único que tienen que hacer es esperar a nuestros repartidores que llegarán a la puerta de su hogar el día asignado con los producto que escogieron.</p>
+        </div>
+      </div>
+    </div>
+	</main>
+
+
+	 <footer class="page-footer purple lighten-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Descarga nuestra app!!</h5>
+                <img class="aplicacion1" src="img/appg.png">
+                <img class="aplicacion2" src="img/appstore.png">
+                <img class="aplicacion3" src="img/windowsPhone.png">
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contacto</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="mailto:contacto@elmandado">contacto@elmandado.com</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/">Pagina de Facebook: El Mandado</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/">Twitter: @elmandado</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container center">
+            © 2017 Hecho con <3 en la Facultad de Ingeniería de la UNAM
+            </div>
+          </div>
+        </footer>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+	$(document).ready(function(){
+      $('.parallax').parallax();
+      $('.button-collapse').sideNav();
+    });
+</script>
+</html>

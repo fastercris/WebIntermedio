@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra Papel o Tijera</title>
+</head>
+<body>
+	
+</body>
+<script>
+	document.write("<h1>Hola mundo</h1>");
+	var usuarioElige= prompt("¿Piedra, Papel o Tijera?");
+	var computadora=Math.random();
+
+	if(computadora<=0.33){
+		computadora="Piedra";
+	}else if(computadora>=0.67){
+		computadora="Tijera";
+	}else{
+		computadora="Papel";
+	}
+
+	function comparar(eleccion1, eleccion2){
+		if(eleccion1==eleccion2){
+			alert("Es un empate!!");
+		}else if(eleccion1==="Piedra"){
+			if(eleccion2==="Tijera"){
+				alert("Tu: "+eleccion1+" Compu: "+eleccion2+ "\n\nGanaste!!");
+			}else{
+				alert("Tu: "+eleccion1+" Compu: "+eleccion2+ "\n\nPerdiste :(");
+			}
+		}
+
+		else if(eleccion1==="Tijera"){
+			if(eleccion2==="Papel"){
+				alert("Tu: "+eleccion1+" Compu: "+eleccion2+ "\n\nPerdiste :(");
+			}else{
+				alert("Tu: "+eleccion1+" Compu: "+eleccion2+ "\n\nGanaste!!");
+			}
+	    }
+
+	    else if(eleccion1==="Papel"){
+			if(eleccion2==="Piedra"){
+				alert("Tu: "+eleccion1+" Compu: "+eleccion2+ "\n\nGanaste!!");
+			}else{
+				alert("Tu: "+eleccion1+" Compu: "+eleccion2+ "\n\nPerdiste :(");
+			}
+		}
+		else{
+			alert("No es una obcion valida");
+		}
+	}
+	comparar(usuarioElige,computadora);
+</script>
+</html>
